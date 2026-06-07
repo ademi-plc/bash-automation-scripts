@@ -9,7 +9,7 @@ Usage:
 chmod +x FileOrganizer.sh
 ./FileOrganizer.sh
 
-##2. Log Error Extractor (log_error_extractor.sh)
+## 2. Log Error Extractor (log_error_extractor.sh)
 
 Searches for lines containing "ERROR" in a log file and saves them to a timestamped file.
 
@@ -17,7 +17,7 @@ Usage:
 chmod +x log_error_extractor.sh
 ./log_error_extractor.sh /path/to/logfile
 
-##3. Backup Script (backup.sh)
+## 3. Backup Script (backup.sh)
 
 Creates a compressed .tar.gz backup of a folder, saves it to ~/backups/, and automatically deletes backups older than 7 days.
 
@@ -25,7 +25,7 @@ Usage:
 chmod +x backup.sh
 ./backup.sh /path/to/folder
 
-##4. Disk Monitor with Telegram Alerts (disk_monitor.sh)
+## 4. Disk Monitor with Telegram Alerts (disk_monitor.sh)
 
 Checks disk usage on a partition (e.g., /) and sends a Telegram notification if usage exceeds a threshold (default 90%). Logs results to ~/logs/disk_monitor.log.
 
