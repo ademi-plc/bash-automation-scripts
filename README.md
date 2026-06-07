@@ -25,6 +25,32 @@ Usage:
 chmod +x backup.sh
 ./backup.sh /path/to/folder
 
+4. Disk Monitor with Telegram Alerts (disk_monitor.sh)
+
+Checks disk usage on a partition (e.g., /) and sends a Telegram notification if usage exceeds a threshold (default 90%). Logs results to ~/logs/disk_monitor.log.
+
+Features:
+
+· Sends alert or OK message with HTML formatting
+· Uses Telegram Bot API
+· Logs with timestamps
+
+Usage:
+chmod +x disk_monitor.sh
+# Edit the script and set your TELEGRAM_BOT_TOKEN and TELEGRAM_CHAT_ID
+./disk_monitor.sh
+
+Setup Telegram:
+
+1. Create a bot via @BotFather and get the token.
+2. Get your chat ID via @userinfobot.
+3. Replace <your token> and <your_chat_id> in the script.
+
+Automation with cron:
+crontab -e
+# Add line to run every hour:
+0 * * * * /home/your_user/disk_monitor.sh
+
 Requirements
 
 · Linux / macOS / WSL
